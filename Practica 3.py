@@ -10,7 +10,7 @@ df = pd.read_csv(archivo_csv)
 #el año mas reciente
 dfActual = df[df['date'] >= '2023-01-01']
 #print(dfActual.head())
-
+#dfActual = df
 #Encontrar los valores maximos de venta de cada mineral en el año
 print("Valores de venta más altos del 2023")
 print(dfActual.groupby('commodity')['high'].max())
